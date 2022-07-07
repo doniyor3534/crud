@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::placeholder {
+    color: darkgrey;
+}
+
+.app {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    background: linear-gradient(121.32deg, #FFFFFF 10.96%, #FFFFFF 72%, #FFFFFF 99.98%);
+}
+
+.saitbar {
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 0;
+    border-right: 2px solid rgba(153, 152, 152, 0.434);
+    background: linear-gradient(121.32deg, #FFFFFF 10.96%, #FFFFFF 72%, #FFFFFF 99.98%);
+}
+
+.logo {
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.logopasition {
+    position: absolute;
+    top: -5px;
+    left: 20px;
+}
+
+.woiti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
+
+.saitbar ul {
+    width: 100%;
+    height: 60%;
+}
+
+.saitbar ul li {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    padding: 10px 0;
+    color: rgb(101, 117, 124);
+    font-weight: 600;
+    padding-left: 60px;
+    transition: all 0.1s ease-in;
+}
+
+.saitbar ul li:hover {
+    background-color: aliceblue;
+    color: rgb(13, 13, 182);
+    border-right: blueviolet 2px solid;
+}
+
+.saitbar ul a.active li {
+    background-color: rgb(209, 226, 241);
+    color: rgb(13, 13, 182);
+    border-right: blueviolet 2px solid;
+}
+
+.saitbar ul li:hover svg {
+    transform: scale(1.1);
+}
+
+.settingicon:hover svg {
+    animation: infinite 2s linear seticon;
+}
+
+@keyframes seticon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.home {
+    width: 100%;
+    padding: 10px 5%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navleft h1 {
+    font-weight: 600;
+    font-size: 43.3726px;
+    line-height: 53px;
+
+    /* text-primary */
+
+    color: #404040;
+}
+
+.navleft p {
+    font-weight: 400;
+    font-size: 16.0564px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #AEAEAE;
+}
+
+.navright {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navright svg {
+    width: 30px;
+    height: 30px;
+    color: grey;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profil svg {
+    width: 40px;
+    height: 40px;
+    color: rgb(29, 137, 25);
+    border-radius: 50%;
+}
+
+.profil span {
+    font-weight: 700;
+}
+
+.profil p {
+    font-weight: 500;
+    color: grey;
+}
+
+/* /////////// */
+.overview {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.overleft {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.overright {
+    box-shadow: #AEAEAE 0px 0px 5px;
+    margin-top: 30px;
+}
+
+.overcard {
+    width: 596.66px;
+    height: 363.12px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    /* 1 */
+    padding: 25px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 28px;
+    box-shadow: #AEAEAE 0px 0px 5px;
+}
+
+.carta {
+    width: 320.43px;
+    height: 206.17px;
+    padding: 15px;
+    background: linear-gradient(180deg, #197BBD 0%, #3391D0 100%);
+    border-radius: 26px;
+}
+
+.carta h6 {
+    font-weight: 700;
+    font-size: 16.7475px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+.carta p {
+    font-weight: 700;
+    font-size: 8.11292px;
+    line-height: 10px;
+    /* identical to box height */
+    
+    
+    color: rgba(255, 255, 255, 0.39);
+}
+.carta h4 {
+    font-weight: 500;
+    font-size: 21.4918px;
+    line-height: 27px;
+    /* identical to box height */
+    margin-top: 25px;
+    
+    color: #FFFFFF;
+}
+.cartbody{
+    display: flex;
+    margin-top: 30px;
+    gap: 15px;
+}
+.cartbody span{
+    font-weight: 500;
+    font-size: 7.17776px;
+    line-height: 9px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.cartbody h5{
+    font-weight: 500;
+    font-size: 12.6167px;
+    line-height: 15px;
+    
+    color: #FFFFFF;
+    
+}
+
+
+
+
+
+
+
+.overcardbody {
+    box-shadow: #AEAEAE 0px 0px 5px;
+}
